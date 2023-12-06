@@ -24,7 +24,8 @@ const foodProducts= [
 
 
 
-app.get('/', (req, res) =>  res.send(foodProducts));
+app.get('/', (req, res) =>  res.send("احبك يا امي"));
+app.get('/food', (req, res) =>  res.send(foodProducts));
 
 
 
