@@ -11,9 +11,10 @@ import Food from "../src/models/food.js";
 const app = express();
 const port = dev.app.port;
 
+connectDB();
+
 app.listen(port, () => {
   console.log(`Server listening on port http://localhost:${port}`);
-  connectDB();
 });
 
 app.use(morgan("dev"));
