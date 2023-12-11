@@ -28,9 +28,24 @@ app.get("/", (req, res) => {
    <h1>Welcome to my Food API.</h1>
 
    <h2>Routes</h2>
-    You can add a food to the database by making a POST request to /food.
-    You can view all foods by making a GET request to /foods.
-    You can view a specific food by making a GET request to /food/:name. `
+    <ul>
+      <li>
+      Main Route:
+      <a href="https://server-blond-phi.vercel.app/">https://server-blond-phi.vercel.app/</a>
+      </li>
+      <li>
+      Get all food:
+      <a href="https://server-blond-phi.vercel.app/foods">https://server-blond-phi.vercel.app/foods</a>
+      </li>
+      <li>
+      Get a specific food:
+      <a href="https://server-blond-phi.vercel.app/food/:name">https://server-blond-phi.vercel.app/food/Hamburger</a>
+      </li>
+      <li>
+      Add a food:
+      <a href="https://server-blond-phi.vercel.app/food">https://server-blond-phi.vercel.app/food</a>
+      </li>
+    </ul>`
   );
 });
 
