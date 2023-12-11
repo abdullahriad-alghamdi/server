@@ -33,7 +33,7 @@ app.get("/foods", async (req, res) => {
   try {
     const foods = await Food.find();
     if (!foods) return res.status(400).json({ msg: "No food exist" });
-    res.status(200).json(foods);
+    res.status(200).json({ foods });
   } catch (error) {
     res.status(500).json({ msg: "Internal server error" });
   }
