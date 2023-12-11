@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
       </li>
       <li>
       Get a specific food:
-      <a href="https://server-blond-phi.vercel.app/food/:name">https://server-blond-phi.vercel.app/food/Hamburger</a>
+      <a href="https://server-blond-phi.vercel.app/food/Hamburger">https://server-blond-phi.vercel.app/food/Hamburger</a>
       </li>
       <li>
       Add a food:
