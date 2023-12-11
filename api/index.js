@@ -24,7 +24,13 @@ app.use(express.urlencoded({ extended: true }));
 // Default route
 app.get("/", (req, res) => {
   res.send(
-    "Welcome to our Food API. You can go to /food to see all the food we have or /food/:name to see a specific food"
+    `
+   <h1>Welcome to my Food API.</h1>
+
+   <h2>Routes</h2>
+    You can add a food to the database by making a POST request to /food.
+    You can view all foods by making a GET request to /foods.
+    You can view a specific food by making a GET request to /food/:name. `
   );
 });
 
@@ -50,7 +56,7 @@ app.get("/food/:name", async (req, res) => {
   }
 });
 
-// Add a food link : http://localhost:5000/food
+// Add a food
 app.post("/food", async (req, res) => {
   try {
     const { name, type, price } = req.body;
